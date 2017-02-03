@@ -12,7 +12,7 @@ We will create a Person Entity with a value of "Andrew MacPherson".
 This transform merely returns "hello world" as a phrase, it doesn't depend on the input entity at all:
 
 ``` python
-from MaltegoTransform import *
+from maltego import *
 me = MaltegoTransform()
 me.addEntity("maltego.Phrase","hello world");
 me.returnOutput()
@@ -23,7 +23,7 @@ me.returnOutput()
 This is simple transform to show reading input from an entity and returning it to the graph (in this case working with a domain and returning a phrase with that domain in it):
 
 ``` python
-from MaltegoTransform import *
+from maltego import *
 import sys
 
 domain = sys.argv[1]
@@ -38,7 +38,7 @@ me.returnOutput()
 This example simply illustrates using the library to read the properties of an entity and printing them out *note* this is just a snippet, not a transform!
 
 ``` python
-from MaltegoTransform import *
+from maltego import *
 import sys
 
 me = MaltegoTransform()
@@ -56,7 +56,7 @@ print latitude
 This transform example shows reading an entity in as well as setting properties, additional fields, a UI message and the weight of the entity (run on a domain):
 
 ``` python
-from MaltegoTransform import *
+from maltego import *
 import sys
 
 me = MaltegoTransform()
